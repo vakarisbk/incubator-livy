@@ -1208,7 +1208,6 @@
         <spark.bin.download.url>
           https://archive.apache.org/dist/spark/spark-${spark.version}/${spark.bin.name}.tgz
         </spark.bin.download.url>
-        <spark.bin.name>spark-3.0.0-bin-hadoop2.7</spark.bin.name>
         <kubernetes.client.version>4.9.2</kubernetes.client.version>
         <jackson.version>2.12.7</jackson.version>
       </properties>
