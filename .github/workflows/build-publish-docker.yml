@@ -24,6 +24,8 @@ jobs:
         uses: docker/login-action@v2
         with:
           registry: ghcr.io/vakarisbk/incubator-livy
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
