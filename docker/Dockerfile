@@ -33,6 +33,6 @@ ENV LIVY_CONF_DIR           $LIVY_HOME/conf
 ENV PATH                    $PATH:$LIVY_HOME/bin
 ENV LIVY_LOG_DIR            /var/log/livy/
 
-COPY entrypoint.sh /opt/livy/
+COPY docker/entrypoint.sh /opt/livy/
 
 ENTRYPOINT /opt/livy/entrypoint.sh
