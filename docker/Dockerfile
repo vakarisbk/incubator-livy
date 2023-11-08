@@ -19,7 +19,7 @@ RUN wget --no-verbose "https://downloads.apache.org/spark/spark-${SPARK_VERSION}
     mv  /opt/spark-3.5.0-bin-hadoop3 ${SPARK_HOME}
 
 # Set the location of the Livy zip file
-ARG LIVY_ZIP_URL=https://github.com/vakarisbk/incubator-livy/releases/download/0.9.1/livy-0.9-snapshot.zip
+ARG LIVY_ZIP_URL=https://github.com/vakarisbk/incubator-livy/releases/download/0.9.0-k8s/livy-0.9-snapshot.zip
 
 # Download and extract the Livy zip file into /opt/livy
 RUN wget --no-verbose "${LIVY_ZIP_URL}" -O /opt/livy.zip && \
