@@ -33,4 +33,4 @@ jobs:
           context: .
           file: ./docker/Dockerfile
           push: true
-          tags: ghcr.io/${{ github.repository_owner }}/your-image-name:${{ github.event.inputs.tag }}
+          tags: ghcr.io/${{ github.repository_owner }}/livy:${{ github.event.inputs.tag }}
